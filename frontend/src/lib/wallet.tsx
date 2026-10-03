@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
-import { createWalletClient, http, type Account, type Address, type Chain, type Transport, type WalletClient } from "viem";
+import { createWalletClient, http, walletActions, type Account, type Address, type Chain, type Transport, type WalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { useConnect, useConnection, useConnectors, useDisconnect } from "wagmi";
 import { getConnectorClient, switchChain } from "wagmi/actions";
@@ -55,7 +55,8 @@ export function WalletProvider({ children }: { children: ReactNode }) {
       }
       if (!conn.address) throw new Error("Connect a wallet first");
       if (conn.chainId !== chainId) await switchChain(wagmiConfig, { chainId: chainId as never });
-      return (await getConnectorClient(wagmiConfig, { chainId: chainId as never })) as unknown as Writer;
+      const client = await getConnectorClient(wagmiConfig, { chainId: chainId as never });
+      return client.extend(walletActions) as unknown as Writer;
     },
   };
 

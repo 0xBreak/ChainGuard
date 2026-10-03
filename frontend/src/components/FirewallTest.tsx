@@ -93,7 +93,11 @@ export function FirewallTest({ prefill }: { prefill: Address | null }) {
       return;
     }
 
-    const res = await run(`${t.symbol} transfer`, net.chainId, (w) => w.writeContract({ address: tokenAddr!, abi: guardedTokenAbi, functionName: "transfer", args }));
+    // Simulate on our own RPC first: browser wallets often drop the revert data, which hides the AddressBlocked reason.
+    const res = await run(`${t.symbol} transfer`, net.chainId, async (w) => {
+      await net.client.simulateContract({ account: wallet.address!, address: tokenAddr!, abi: guardedTokenAbi, functionName: "transfer", args });
+      return w.writeContract({ address: tokenAddr!, abi: guardedTokenAbi, functionName: "transfer", args });
+    });
     if (res.ok) {
       setOutcome({
         tone: pSev > 0 ? "warn" : "ok",
