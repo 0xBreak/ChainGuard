@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="46%" r="50%">
+      <stop offset="0" stop-color="#ff3b3b" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#ff3b3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5252"/>
+      <stop offset="1" stop-color="#d81f1f"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#06080b"/>
+  <rect width="512" height="512" rx="112" fill="url(#grid)"/>
+  <rect width="512" height="512" rx="112" fill="url(#glow)"/>
+  <!-- glow copy of the shield -->
+  <path d="M256 92 132 142v84c0 84 53 156 124 178 71-22 124-94 124-178v-84z" fill="none" stroke="#ff3b3b" stroke-width="20" opacity="0.55" filter="url(#blur)"/>
+  <!-- shield -->
+  <path d="M256 92 132 142v84c0 84 53 156 124 178 71-22 124-94 124-178v-84z" fill="#0b0f13" stroke="url(#shield)" stroke-width="18" stroke-linejoin="round"/>
+  <!-- chain link inside: two interlocked rounded links -->
+  <g fill="none" stroke="#e8edf2" stroke-width="16" stroke-linecap="round">
+    <rect x="190" y="214" width="84" height="52" rx="26" transform="rotate(-35 232 240)"/>
+    <rect x="238" y="226" width="84" height="52" rx="26" transform="rotate(-35 280 252)"/>
+  </g>
+  <!-- block slash: the firewall -->
+  <path d="M196 318 316 186" stroke="#ff3b3b" stroke-width="18" stroke-linecap="round"/>
+</svg>

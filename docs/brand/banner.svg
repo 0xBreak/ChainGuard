@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="22%" cy="50%" r="45%">
+      <stop offset="0" stop-color="#ff3b3b" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ff3b3b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1500" height="500" fill="#05070a"/>
+  <rect width="1500" height="500" fill="url(#grid)"/>
+  <rect width="1500" height="500" fill="url(#glow)"/>
+  <image href="logo.svg" x="110" y="90" width="320" height="320"/>
+  <text x="500" y="230" font-family="JetBrains Mono, monospace" font-size="92" font-weight="700" letter-spacing="10" fill="#e8edf2">CHAINGUARD</text>
+  <text x="504" y="292" font-family="Inter, sans-serif" font-size="34" fill="#9aa6b2">On-chain compliance firewall for tokenized assets</text>
+  <text x="504" y="356" font-family="JetBrains Mono, monospace" font-size="24" letter-spacing="3" fill="#ff3b3b">ARBITRUM SEPOLIA  ·  ROBINHOOD CHAIN</text>
+</svg>

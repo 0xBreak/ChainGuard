@@ -1,5 +1,7 @@
 # ChainGuard
 
+![ChainGuard](docs/brand/banner.png)
+
 **An on-chain compliance firewall for stablecoins and tokenized stocks.**
 The token itself refuses to move funds to hackers, wallet drainers and sanctioned addresses. It runs live on **Arbitrum Sepolia** and **Robinhood Chain testnet**, sharing one threat registry kept in sync across both chains.
 
