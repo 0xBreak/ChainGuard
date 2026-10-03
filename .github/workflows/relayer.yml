@@ -1,0 +1,25 @@
+# Keeps the Arbitrum Sepolia and Robinhood Chain registries in sync without any always-on machine:
+# every ~5 minutes GitHub runs the relayer in one-shot mode (mirror whatever is out of date, then exit).
+# Needs repository secret RELAYER_PRIVATE_KEY. A local `scripts/testnet-relayer.sh start` gives ~4 s sync on top.
+name: relayer
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: relayer
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+        working-directory: relayer
+      - run: bun src/index.ts --once
+        working-directory: relayer
+        env:
+          MODE: testnet
+          RELAYER_PRIVATE_KEY: ${{ secrets.RELAYER_PRIVATE_KEY }}
