@@ -34,7 +34,7 @@ A broker has to screen counterparties by law. An ERC-20 doesn't screen anyone. A
 - **Frontend.** Vite + React + wagmi/viem. It reads straight from both chains with no backend. It shows a verdict with a plain-language explanation, threat-intel matches, the on-chain timeline, a live event feed, cross-chain sync status read from the chains, a firewall test (faucet, preview, send, forced on-chain revert), staked reporting, a committee desk and a searchable registry.
 
 ## Links
-- Live site: <VERCEL_URL>
+- Live site: https://chain-guard-frontend.vercel.app
 - Code: https://github.com/0xBreak/ChainGuard
 - Video: <VIDEO_URL>
 

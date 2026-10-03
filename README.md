@@ -3,7 +3,7 @@
 **An on-chain compliance firewall for stablecoins and tokenized stocks.**
 The token itself refuses to move funds to hackers, wallet drainers and sanctioned addresses. It runs live on **Arbitrum Sepolia** and **Robinhood Chain testnet**, sharing one threat registry kept in sync across both chains.
 
-**Live demo:** _<add Vercel URL>_ · **Video:** _<add link>_ · **Contracts:** [verified on Blockscout](#deployed-contracts)
+**Live demo:** https://chain-guard-frontend.vercel.app · **Video:** _<add link>_ · **Contracts:** [verified on Blockscout](#deployed-contracts)
 
 ![ChainGuard home](docs/home.png)
 
@@ -32,7 +32,7 @@ A broker is legally required to screen who it trades with. An ERC-20 screens no 
 
 ## Try it in 2 minutes
 
-On the live site (no wallet needed for steps 1–2):
+On the [live site](https://chain-guard-frontend.vercel.app) (no wallet needed for steps 1–2):
 
 1. Click **Kelp DAO exploiter** → **BLOCKED**, category EXPLOIT, with threat-feed matches and its on-chain history on both chains.
 2. Click **Tornado Cash 1 ETH** → **WARNING** (mixer, allowed but monitored). Click **vitalik.eth** → **CLEAN**.
