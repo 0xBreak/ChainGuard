@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd frontend && bun install",
+  "buildCommand": "cd frontend && bun run build:testnet",
+  "outputDirectory": "frontend/dist",
+  "framework": null
+}

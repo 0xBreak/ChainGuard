@@ -1,0 +1,11 @@
+node_modules/
+.env
+.local/
+contracts/out/
+contracts/cache/
+contracts/deployments/local/*.json
+contracts/broadcast/
+frontend/dist/
+!frontend/.env
+.testnet/
+*.local
