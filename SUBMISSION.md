@@ -35,7 +35,7 @@ A broker has to screen counterparties by law. An ERC-20 doesn't screen anyone. A
 
 ## Links
 - Live site: <VERCEL_URL>
-- Code: <GITHUB_URL>
+- Code: https://github.com/0xBreak/ChainGuard
 - Video: <VIDEO_URL>
 
 ## Deployed contracts (verified on Blockscout)
