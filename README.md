@@ -116,7 +116,7 @@ All source code is verified on Blockscout.
 | ComplianceRegistry | [`0x4FC00B31…9177b`](https://arbitrum-sepolia.blockscout.com/address/0x4FC00B3132F5121978A82D0a0f79f9B79869177b?tab=contract) | [`0xe65245bC…50F74`](https://explorer.testnet.chain.robinhood.com/address/0xe65245bC1181e34FD75a13457AD1A0Bb87050F74?tab=contract) |
 | ComplianceGuard | [`0x02aA4623…35F61`](https://arbitrum-sepolia.blockscout.com/address/0x02aA4623077e01303Ebd3aA51F6080b944C35F61?tab=contract) | [`0x4aAE0065…Bba73`](https://explorer.testnet.chain.robinhood.com/address/0x4aAE00651Db7bD38609b8f484E991090981Bba73?tab=contract) |
 | USDG (demo) | [`0xc986f96a…d0eCb`](https://arbitrum-sepolia.blockscout.com/address/0xc986f96a29EDd0A99599A76bf51f771c98dd0eCb?tab=contract) | [`0x6B65976C…4B4BB`](https://explorer.testnet.chain.robinhood.com/address/0x6B65976C2faED7F1c5368408F7EF56432EE4B4BB?tab=contract) |
-| TSLA Stock Token (demo) | [`0x6F7948cf…5d035`](https://arbitrum-sepolia.blockscout.com/address/0x6F7948cf238fDAD86CE9364AF06E0a203df5d035?tab=contract) | [`0x97125C80…a90Dc`](https://explorer.testnet.chain.robinhood.com/address/0x97125C80fE5Ed717a341250b87714acda5dA90Dc?tab=contract) |
+| TSLA Stock Token (demo) | [`0x6F7948cf…5d035`](https://arbitrum-sepolia.blockscout.com/address/0x6F7948cf238fDAD86CE9364AF06E0a203df5d035?tab=contract) | [`0x97125C80…A90Dc`](https://explorer.testnet.chain.robinhood.com/address/0x97125C80fE5Ed717a341250b87714acda5dA90Dc?tab=contract) |
 
 Committee (2-of-3): `0xD843CBe0…944DA`, `0xC264A0D0…ba1d5`, `0x7e125358…56AF3`. Relayer: `0x31436123…667C5`.
 
